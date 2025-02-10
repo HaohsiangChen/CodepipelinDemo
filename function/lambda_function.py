@@ -16,7 +16,7 @@ def lambda_handler(event, context):
         
     logger.info(f"CloudWatch logs group: {context.log_group_name}")
     
-    # return the calculated area as a JSON string !!!!
+    # return the calculated area as a JSON string
     data = {"area": area}
     return json.dumps(data)
     
